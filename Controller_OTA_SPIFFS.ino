@@ -1,4 +1,17 @@
-
+/*
+ *  Christmas Light controller.
+ *
+ *  This sketch used for NodeMCU board only.
+ *  It read light_parameter files in SPIFFS and send to Serial1
+ *  Serial0 is used for debuging only.
+ *  It is posible to transfer light_parameter files via wifi (OTA)
+ *  
+ *  
+ *
+ *  Created by Chuong Nguyen, 2017.
+ *  
+ */
+ 
 #include <ESP8266WiFi.h>  
 #include <WiFiClient.h>  
 #include <ESP8266mDNS.h>
@@ -91,8 +104,10 @@ void setup()
 //  Serial.println("Spiffs formatted");
   Serial.print("SPIFFS ready");
 
-
 }  
+
+
+
 void loop()   
 {  
       
@@ -205,4 +220,3 @@ void delayWithOTA(uint32 ms) {
     delay(1);
   }
 }
-
