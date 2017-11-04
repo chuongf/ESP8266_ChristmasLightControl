@@ -1,8 +1,6 @@
 
-#include <DHT.h>  
 #include <ESP8266WiFi.h>  
 #include <WiFiClient.h>  
-#include <ThingSpeak.h>  
 #include <ESP8266mDNS.h>
 #include <WiFiUdp.h>
 #include <ArduinoOTA.h>
